@@ -49,13 +49,13 @@ fd(100)
 ##fd(35)
 
 # def seven():
-pu()
-goto(0, 100)
-seth(90)
-pd()
-fd(35)
-rt(90)
-fd(35)
+##pu()
+##goto(0, 100)
+##seth(90)
+##pd()
+##fd(35)
+##rt(90)
+##fd(35)
 
 # def eight():
 ##pu()
@@ -78,11 +78,11 @@ fd(35)
 ##fd(35)
 
 # def ten():
-pu()
-goto(0, 100)
-seth(-90)
-pd()
-fd(35)
+##pu()
+##goto(0, 100)
+##seth(-90)
+##pd()
+##fd(35)
 
 # def twenty():
 ##pu()
