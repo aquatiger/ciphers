@@ -1,6 +1,20 @@
 from turtle import *
 
+
 digits = input("Please enter an integer less than 10,000 greater than 0:  ")
+
+#def digit_check(digits):
+#p = re.compile(r'^\d+$')
+#m = p.match(digits)
+if digits.isdigit():
+    print(digits)
+else:
+    print("No match")
+    #break
+
+# digits = input("Please enter an integer less than 10,000 greater than 0:  ")
+
+
 
 mode("logo")   # resets turtle heading to north
 speed(0)

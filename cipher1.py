@@ -1,6 +1,25 @@
 from turtle import *
+import re
+
+# use turtle to draw ciphers of the Cistercian monks
 
 digits = input("Please enter an integer less than 10,000 greater than 0:  ")
+
+""" ensure input is no other characters than digits
+sudocode: if the input has anything other than digits
+ return digits  """
+
+#def digit_check(digits):
+p = re.compile(r'^\d+$')
+m = p.match(digits)
+if m:
+    print(digits)
+    m = digits
+#        digits = input("Please enter an integer less than 10,000 greater than 0:  ")
+else:
+    print("No match")
+    
+#digit_check(digits)
 
 mode("logo")   # resets turtle heading to north
 speed(0)
