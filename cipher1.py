@@ -1,15 +1,17 @@
 from turtle import *
 import re
+import random
+
 
 # use turtle to draw ciphers of the Cistercian monks
 
 digits = input("Please enter an integer less than 10,000 greater than 0:  ")
 
-""" ensure input is no other characters than digits
-sudocode: if the input has anything other than digits
- return digits  """
+r = random.randint(0, 255)
+g = random.randint(0, 255)
+b = random.randint(0, 255)
 
-#def digit_check(digits):
+# ensure input is only digits
 p = re.compile(r'^\d+$')
 m = p.match(digits)
 if m:
@@ -18,13 +20,23 @@ if m:
 #        digits = input("Please enter an integer less than 10,000 greater than 0:  ")
 else:
     print("No match")
-    
-#digit_check(digits)
+
+colormode(255)
+##reddish = random.randrange(255)
+##greenish = random.randrange(255)
+##bluish = random.randrange(255)
+##pencolor(reddish, greenish, bluish)
+
+# pencolor(r, g, b)
+
 
 mode("logo")   # resets turtle heading to north
+pencolor(r, g, b)
 speed(0)
 ht()
 fd(100)
+# pencolor(random.randrange(255), random.randrange(255), random.randrange(255))
+
 
 # if statements for the ones position
 if digits[-1] == "1":
