@@ -32,6 +32,7 @@ colormode(255)
 
 mode("logo")   # resets turtle heading to north
 pencolor(r, g, b)
+pensize(3)
 speed(0)
 ht()
 fd(100)
