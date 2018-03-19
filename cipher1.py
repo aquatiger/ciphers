@@ -5,7 +5,7 @@ import random
 
 # use turtle to draw ciphers of the Cistercian monks
 
-digits = input("Please enter an integer less than 10,000 greater than 0:  ")
+digits = textinput(title="Number input", prompt="Please enter an integer less than 10,000 greater than 0:  ")
 
 r = random.randint(0, 255)
 g = random.randint(0, 255)
@@ -22,22 +22,19 @@ else:
     print("No match")
 
 colormode(255)
-##reddish = random.randrange(255)
-##greenish = random.randrange(255)
-##bluish = random.randrange(255)
+reddish = random.randint(0, 255)
+greenish = random.randint(0, 255)
+bluish = random.randint(0, 255)
 ##pencolor(reddish, greenish, bluish)
 
-# pencolor(r, g, b)
-
-
 mode("logo")   # resets turtle heading to north
+setup(width=175, height=300)
 pencolor(r, g, b)
 pensize(3)
+bgcolor(reddish, greenish, bluish)
 speed(0)
 ht()
 fd(100)
-# pencolor(random.randrange(255), random.randrange(255), random.randrange(255))
-
 
 # if statements for the ones position
 if digits[-1] == "1":
