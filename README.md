@@ -7,4 +7,4 @@ It is just a compact, wonderful system for numbers, that any number less than 10
 
 User inputs a number and python turtle draws the cipher.
 
-Plan on randomizing the color of the cipher and possibly the background.
+The color of the cipher and the color of the background are randomized now, so each time is a different color for both.
