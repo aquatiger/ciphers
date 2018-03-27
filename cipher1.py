@@ -28,7 +28,7 @@ bluish = random.randint(0, 255)
 ##pencolor(reddish, greenish, bluish)
 
 mode("logo")   # resets turtle heading to north
-setup(width=175, height=300)
+setup(width=402, height=302)
 pencolor(r, g, b)
 pensize(3)
 bgcolor(reddish, greenish, bluish)
